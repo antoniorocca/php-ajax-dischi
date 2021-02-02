@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #161616;
+}
+main #container-dischi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+main #container-dischi .disco {
+  text-align: center;
+  margin: 25px;
+  width: 180px;
+  height: 275px;
+  background-color: black;
+  color: white;
+}
+main #container-dischi .disco img {
+  height: 130px;
+  width: 130px;
+  margin: 15px;
+}
+main #container-dischi .disco h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+main #container-dischi .disco .author {
+  color: gray;
+  font-size: 15px;
+}
+main #container-dischi .disco .year {
+  font-size: 14px;
+}
+
+nav {
+  height: 50px;
+  background-color: black;
+}
+nav img {
+  width: 50px;
+  margin-left: 355px;
+}

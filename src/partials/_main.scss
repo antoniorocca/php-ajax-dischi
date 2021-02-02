@@ -1,0 +1,38 @@
+main {
+   @include d-flex;
+   @include center;
+   width: 100%;
+   height: 100%;
+   background-color: rgb(22, 22, 22);
+   #container-dischi {
+       @include d-flex;
+       @include center;
+       width: 60%;
+       height: 100%;
+       flex-wrap: wrap;
+       .disco {
+            text-align: center;
+            margin: 25px;
+            width: 180px;
+            height: 275px;
+            background-color: black;
+            color: white;
+            img {
+                height: 130px;
+                width: 130px;
+                margin: 15px;
+            }
+            h3 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            .author {
+                color: gray;
+                font-size: 15px;
+            }
+            .year {
+                font-size: 14px;
+            }
+        }        
+    }  
+}
