@@ -7,7 +7,19 @@
   \********************/
 /***/ (() => {
 
+var app = new Vue({
+  el: "#app",
+  data: {
+    dischi: []
+  },
+  mounted: function mounted() {
+    var _this = this;
 
+    axios.get('http://localhost/php-ajax-dischi/milestone2/database.php/').then(function (response) {
+      _this.dischi = response.data;
+    });
+  }
+});
 
 /***/ }),
 
