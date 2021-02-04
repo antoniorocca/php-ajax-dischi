@@ -15,7 +15,7 @@ var app = new Vue({
   mounted: function mounted() {
     var _this = this;
 
-    axios.get('http://localhost/php-ajax-dischi/milestone2/database.php/').then(function (response) {
+    axios.get('milestone2/database.php').then(function (response) {
       _this.dischi = response.data;
     });
   }

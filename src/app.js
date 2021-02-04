@@ -4,7 +4,7 @@ let app = new Vue({
         dischi: [],    
     },
     mounted() {
-        axios.get('http://localhost/php-ajax-dischi/milestone2/database.php/') 
+        axios.get('milestone2/database.php') 
         .then(response => {
          this.dischi = response.data;   
         });
